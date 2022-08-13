@@ -76,3 +76,13 @@ body:hover {
   cursor: pointer;
   color: aliceblue;
 }
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  padding: 20px;
+  color: white;
+  background-color: black;
+  margin: 0px;
+}
