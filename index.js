@@ -17,8 +17,8 @@ function GP(score){
 
 function winner(){
   if(home_score>guest_score){
-    document.getElementById('team1').innerText = "Home 👑"
-    document.getElementById('team2').innerText = "Guest"
+    document.getElementById('team1').innerText = "Home 🥳"
+    document.getElementById('team2').innerText = "Guest 😭"
   }
   
   else if (home_score==guest_score){
@@ -27,8 +27,8 @@ function winner(){
   }
 
   else {
-    document.getElementById('team2').innerText = "Guest 👑"
-    document.getElementById('team1').innerText = "Home"
+    document.getElementById('team2').innerText = "Guest 🥳"
+    document.getElementById('team1').innerText = "Home 😭"
   } 
 }
 
@@ -37,7 +37,7 @@ function reset(){
   guest_score = 0
   setHS.innerText = home_score
   setGS.innerText = guest_score
-  document.getElementById('team2').innerText = "Guest"
-  document.getElementById('team1').innerText = "Home"
+  document.getElementById('team2').innerText = "Guest  "
+  document.getElementById('team1').innerText = "Home  "
 
 }
