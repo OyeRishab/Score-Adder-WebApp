@@ -33,11 +33,13 @@ function winner(){
 }
 
 function reset(){
+  localStorage.setItem("Scores", JSON.stringify([home_score, guest_score]))
+  let prevScore = document.getElementById("prev")
+  prevScore.innerText = `Previous Score : Home (${home_score}) Guest (${guest_score})`
   home_score = 0
   guest_score = 0
   setHS.innerText = home_score
   setGS.innerText = guest_score
   document.getElementById('team2').innerText = "Guest  "
   document.getElementById('team1').innerText = "Home  "
-
 }
